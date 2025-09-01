@@ -1,7 +1,12 @@
 # 100 Days of DevOps - KodeKloud Challenges & Solutions
 
-This repository contains my 100 Days of DevOps journey with KodeKloud.  
-Each day has a dedicated folder with the challenge and solution.
+## About
+This repository documents my journey through the **100 Days of DevOps** challenge on **KodeKloud**.  
+It includes solutions, notes, and practical exercises covering a variety of real-world DevOps tools and technologies.
+
+## Topics
+linux, docker, kubernetes, jenkins, aws, ansible, terraform, devops, kodekloud, kodekloud-challenges, 100days, devops-practice, cloud, infrastructure, 100-day-of-devops
+
 
 ---
 
