@@ -2,7 +2,7 @@
 # Day 16 - Configure Nginx Load Balancer on LBR Server
 
 ## Task Description
-Due to increasing traffic on one of the websites, the **Nautilus production support team** decided to deploy the application on a **high availability stack** in Stratos DC. The migration is almost complete, and now the **LBR (Load Balancer) server** needs to be configured.
+Due to increasing traffic on one of the websites, the **Nautilus production support team** decided to deploy the application on a **high availability stack** in Stratos DC. The migration is almost complete, and now the **LBR (Load Balancer) server)** needs to be configured.
 
 Your task is to:
 
@@ -18,7 +18,7 @@ Your task is to:
 
 1. **Login to LBR Server**:
     ```bash
-    ssh banner@lbr
+    ssh loki@LBR
     ```
 
 2. **Install Nginx**:
@@ -82,5 +82,4 @@ Your task is to:
 ---
 
 **✅ Done**  
-Nginx is installed and configured as a **load balancer** on the LBR server, distributing traffic to all App Servers while keeping their Apache services intact.
-
+Nginx is installed and configured as a **load balancer** on the LBR server `loki@LBR`, distributing traffic to all App Servers while keeping their Apache services intact.
