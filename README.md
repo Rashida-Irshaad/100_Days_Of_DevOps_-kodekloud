@@ -6,7 +6,7 @@ Each day has a dedicated folder with the challenge and solution.
 ---
 
 ## Progress Tracker
-- [x] Day 1 - Linux User Setup with Non-Interactive Shell(Day1/README.md) 
+- [x] Day 1 - Linux User Setup with Non-Interactive Shell(Day1/README.md)
 - [x] Day 2 - Temporary User Setup with Expiry  
 - [x] Day 3 - Secure Root SSH Access  
 - [x] Day 4 - Script Execution Permissions  
