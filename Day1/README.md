@@ -20,8 +20,7 @@ ssh steve@stapp02
 
 sudo useradd -s /sbin/nologin jim
 
-
-3. Verify the user is created
+3.Verify the user is created
 
 getent passwd jim
 
