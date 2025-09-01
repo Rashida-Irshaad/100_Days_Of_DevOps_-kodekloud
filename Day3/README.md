@@ -1,93 +1,74 @@
 # Day 3 - Challenge 
 
-Day 3 - Disable Direct Root SSH Login on All App Servers
-Task
+## - Disable Direct Root SSH Login on All App Servers
 
-Following a recent security audit, the xFusionCorp Industries security team has introduced stricter security policies. One key requirement is to disable direct root SSH login on all App Servers within the Stratos Datacenter.
+### Task Description
+Following a recent security audit, the **xFusionCorp Industries** security team has introduced stricter policies.  
+Your task is to **disable direct SSH root login** on all App Servers within the **Stratos Datacenter**, so that users log in with their own accounts and use **sudo** for administrative tasks.
 
-This ensures that no one can log in directly as the root user via SSH. Instead, users should use their own accounts and escalate privileges using sudo when necessary.
+---
 
-Infrastructure Details
+### Requirements
+- **Action**: Disable direct root SSH login  
+- **Servers**:  
+  - App Server 1 (`stapp01`) → User: `tony`  
+  - App Server 2 (`stapp02`) → User: `steve`  
+  - App Server 3 (`stapp03`) → User: `banner`  
+- **SSH Config File**: `/etc/ssh/sshd_config`  
+- **Directive**: `PermitRootLogin no`  
 
-Datacenter: Stratos
+---
 
-App Server 1: stapp01 → User: tony
+### Steps to Complete Task
+1. **Login to App Server 1**:
+    ```bash
+    ssh tony@stapp01
+    ```
 
-App Server 2: stapp02 → User: steve
+2. **Login to App Server 2**:
+    ```bash
+    ssh steve@stapp02
+    ```
 
-App Server 3: stapp03 → User: banner
+3. **Login to App Server 3**:
+    ```bash
+    ssh banner@stapp03
+    ```
 
-Step-by-Step Solution
-1. Connect to Each App Server
+4. **Switch to Root User**:
+    ```bash
+    sudo su -
+    ```
 
-From the jump host (thor@jump_host), connect to each App Server:
+5. **Edit SSH Configuration File**:
+    ```bash
+    vi /etc/ssh/sshd_config
+    ```
+    - Find the line:
+      ```
+      #PermitRootLogin yes
+      ```
+    - Change it to:
+      ```
+      PermitRootLogin no
+      ```
+    - If the line doesn’t exist, add it manually.
 
-ssh tony@stapp01      # App Server 1
-ssh steve@stapp02     # App Server 2
-ssh banner@stapp03    # App Server 3
+6. **Save and Exit**:
+    - Press `Esc`  
+    - Type `:wq`  
+    - Hit `Enter`
 
-2. Switch to Root User
-sudo su -
+7. **Restart SSH Service**:
+    ```bash
+    systemctl restart sshd
+    ```
 
-3. Edit the SSH Configuration File
-
-Open the SSH config file in the text editor:
-
-vi /etc/ssh/sshd_config
-
-
-Find the line:
-
-#PermitRootLogin yes
-
-
-Change it to:
-
-PermitRootLogin no
-
-
-If the line doesn’t exist, add it manually.
-
-4. Save and Exit
-
-Press Esc
-
-Type :wq
-
-Hit Enter
-
-5. Restart the SSH Service
-
-Apply the changes:
-
-systemctl restart sshd
-
-6. (Optional) Verify SSH Config Syntax
-
-Before restarting SSH, check for syntax errors:
-
-sshd -t
-
-
-No output means the syntax is correct.
-
-7. Repeat for All App Servers
-
-Apply the same steps on all three servers:
-
-stapp01
-
-stapp02
-
-stapp03
-
-Final Verification
-
-Run the following command on each App Server:
-
-grep -i 'permitrootlogin' /etc/ssh/sshd_config
-
-
-Expected output:
-
-PermitRootLogin no
+8. **Verify SSH Configuration**:
+    ```bash
+    grep -i 'permitrootlogin' /etc/ssh/sshd_config
+    ```
+    Expected output:
+    ```
+    PermitRootLogin no
+    ```
