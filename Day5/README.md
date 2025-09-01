@@ -1,4 +1,4 @@
-# Day 5 - Challenge 
+
 # Day 5 - Challenge
 # Day 5 - Install and Disable SELinux on App Server 3
 
