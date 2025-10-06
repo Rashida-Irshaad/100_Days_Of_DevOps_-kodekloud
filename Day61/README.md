@@ -36,7 +36,7 @@ spec:
 
 kubectl apply -f ic-deploy-nautilus.yaml
 kubectl get pods
-POD=$(kubectl get pod -l app=ic-nautilus -o jsonpath='{.items[0].metadata.name}')
+
 kubectl logs -f $POD
 
 
