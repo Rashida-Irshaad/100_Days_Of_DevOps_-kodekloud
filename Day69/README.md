@@ -12,8 +12,8 @@ Your task is to log in to the Jenkins UI and install the **Git** and **GitLab** 
 
 1️⃣ Click on the **Jenkins** button on the top bar to access the Jenkins UI.  
 2️⃣ Log in using the following credentials:
-   - **Username:** admin  
-   - **Password:** Adm!n321  
+   - **Username:** 
+   - **Password:**  
 3️⃣ Once logged in, install the following plugins:
    - **Git Plugin**
    - **GitLab Plugin**
@@ -27,8 +27,8 @@ Your task is to log in to the Jenkins UI and install the **Git** and **GitLab** 
 1️⃣ **Access Jenkins Web UI**
 - Click on the **Jenkins** button on the top navigation bar in the lab interface.  
 - Log in using:
-  - Username: `admin`  
-  - Password: `Adm!n321`  
+  - Username: 
+  - Password:   
 
 2️⃣ **Open Plugin Manager**
 - From the Jenkins dashboard, navigate to:  
