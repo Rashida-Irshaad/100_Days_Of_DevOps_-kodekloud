@@ -49,7 +49,7 @@ Your task is to log in to the Jenkins UI and install the **Git** and **GitLab** 
 - Wait patiently until the **login page** reappears in your browser.
 
 6️⃣ **Verify Plugin Installation**
-- Log in again using your admin credentials (`admin / Adm!n321`).  
+- Log in again using your admin credentials.  
 - Go to **Manage Jenkins → Plugins → Installed plugins**.  
 - Confirm that both **Git** and **GitLab** plugins appear in the installed list.
 
