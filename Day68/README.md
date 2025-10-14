@@ -9,10 +9,10 @@ The DevOps team at **xFusionCorp Industries** is initiating the setup of CI/CD p
 2. If you face a timeout issue while starting Jenkins, fix it accordingly.  
 3. Use **Java 17** for Jenkins.  
 4. Create an admin user during setup with the following details:  
-   - **Username:** theadmin  
-   - **Password:** Adm!n321  
-   - **Full Name:** Rose  
-   - **Email:** rose@jenkins.stratos.xfusioncorp.com  
+   - **Username:**   
+   - **Password:**  
+   - **Full Name:**  
+   - **Email:** 
 5. Access the Jenkins UI from the **“Jenkins”** button on the top bar in the lab interface after installation and setup.
 
 ---
@@ -52,10 +52,10 @@ Copy the displayed password to use during Jenkins UI setup.
 - Enter the **initial admin password** from the previous step.  
 - Choose **“Install suggested plugins”**.  
 - Create the admin user with the exact details:  
-  - Username: theadmin  
-  - Password: Adm!n321  
-  - Full Name: Rose  
-  - Email: rose@jenkins.stratos.xfusioncorp.com  
+  - Username: 
+  - Password: 
+  - Full Name: 
+  - Email:  
 - Click **Save and Continue → Start using Jenkins**.
 
 8️⃣ **Verify Jenkins Service**  
@@ -68,7 +68,7 @@ Copy the displayed password to use during Jenkins UI setup.
 - Jenkins installed via `yum`  
 - Java 17 configured correctly  
 - Jenkins service running successfully  
-- Admin user `theadmin (Rose)` created with correct email  
+- Admin user created with correct email  
 - Jenkins accessible via the lab UI  
 
 ---
