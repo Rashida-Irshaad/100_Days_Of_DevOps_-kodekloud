@@ -131,4 +131,4 @@ linux, docker, kubernetes, jenkins, aws, ansible, terraform, devops, kodekloud, 
 - Ansible  
 - Terraform  
 - AWS
->>>>>>> 6f5cec57bfd039664c44808531682c1de44cd374
+
